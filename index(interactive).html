@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Companion - Interactive Demo</title>
+    <link rel="stylesheet" href="styles(interactive).css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AI Learning Companion</h1>
+        <p>Experience interactive AI-powered learning!</p>
+    </header>
+
+    <section class="feature">
+        <h2>🔊 Text-to-Speech</h2>
+        <p id="text">Click the button to hear this text.</p>
+        <button onclick="speakText()">Speak</button>
+    </section>
+
+    <section class="feature">
+        <h2>🎤 Speech-to-Text</h2>
+        <button onclick="startSpeechRecognition()">Start Speaking</button>
+        <p id="speechResult">Your speech will appear here...</p>
+    </section>
+
+    <section class="feature">
+        <h2>😊 Emotion-Based Learning</h2>
+        <p>Choose your mood and see how learning adapts:</p>
+        <div class="emotions">
+            <button onclick="changeContent('happy')">😀 Happy</button>
+            <button onclick="changeContent('neutral')">😐 Neutral</button>
+            <button onclick="changeContent('frustrated')">😠 Frustrated</button>
+        </div>
+        <p id="learningContent">Content will change based on mood.</p>
+    </section>
+
+    <section class="feature">
+        <h2>🧠 Adaptive Learning Mode</h2>
+        <p>Pick your difficulty level:</p>
+        <select id="difficulty" onchange="changeDifficulty()">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <p id="adaptiveContent">Select a difficulty to see content change.</p>
+    </section>
+
+    <section class="feature">
+        <h2>♿ Assistive Features</h2>
+        <button onclick="toggleContrast()">Toggle High Contrast</button>
+        <button onclick="toggleDyslexiaFont()">Toggle Dyslexia Font</button>
+    </section>
+
+    <script src="script(interactive).js"></script>
+</body>
+</html>
